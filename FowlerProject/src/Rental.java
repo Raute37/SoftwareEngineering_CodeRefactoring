@@ -1,14 +1,15 @@
 class Rental {
-    private Movie movie;
+    // ===== Attributes ===== //
+	private Movie movie;
     private int daysRented;
-    public Rental(Movie newmovie, int newdaysRented) {
-        movie = newmovie;
-        daysRented = newdaysRented;
+    
+    // ===== Constructor ===== //
+    public Rental(Movie pMovie, int pDaysRented) {
+        movie = pMovie;
+        daysRented = pDaysRented;
     }
-    public int getDaysRented() {
-        return daysRented;
-    }
-    public Movie getMovie() {
-        return movie;
-    }
+    
+    // ===== Getter & Setter ===== //
+    public int getDaysRented() { return daysRented; }
+    public Movie getMovie() { return movie; }
 }

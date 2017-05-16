@@ -1,20 +1,20 @@
 public class Movie {
-    public static final int CHILDRENS = 2;
+	// ===== Attributes ===== //
     public static final int REGULAR = 0;
     public static final int NEW_RELEASE = 1;
+    public static final int CHILDRENS = 2;
+    
     private String title;
     private int priceCode;
-    public Movie(String newtitle, int newpriceCode) {
-        title = newtitle;
-        priceCode = newpriceCode;
+    
+    // ===== Constructor ===== //
+    public Movie(String pTitle, int pPriceCode) {
+        title = pTitle;
+        priceCode = pPriceCode;
     }
-    public int getPriceCode() {
-        return priceCode;
-    }
-    public void setPriceCode(int arg) {
-        priceCode = arg;
-    }
-    public String getTitle (){
-        return title;
-    };
+    
+    // ===== Getter & Setter ===== //
+    public int getPriceCode() { return priceCode; }
+    public void setPriceCode(int pPriceCode) { priceCode = pPriceCode; }
+    public String getTitle() { return title; }
 }
